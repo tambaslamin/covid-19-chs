@@ -28,8 +28,8 @@ include __DIR__ . "/settings.pantheon.php";
 /**
  * If there is a local settings file, then include it
  */
- $settings["file_temp_path"] = "/srv/bindings/cb0bb2578c8e443683f4e878ed3154f8/tmp"
- 
+$settings["file_temp_path"] = "/srv/bindings/cb0bb2578c8e443683f4e878ed3154f8/tmp";
+
 $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
