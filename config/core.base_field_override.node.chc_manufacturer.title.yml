@@ -1,0 +1,18 @@
+uuid: 81cdf2e3-ff08-4aff-bdef-a863b089a724
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.chc_manufacturer
+id: node.chc_manufacturer.title
+field_name: title
+entity_type: node
+bundle: chc_manufacturer
+label: 'Manufacturer Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

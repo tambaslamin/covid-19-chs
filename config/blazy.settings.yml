@@ -1,12 +1,12 @@
 admin_css: true
-fx: ''
-noscript: false
+fx: blur
+noscript: true
 responsive_image: false
 one_pixel: true
 placeholder: ''
 extras: {  }
 blazy:
-  loadInvisible: false
+  loadInvisible: true
   offset: 100
   saveViewportOffsetDelay: 50
   validateDelay: 25

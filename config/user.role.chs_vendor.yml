@@ -1,0 +1,9 @@
+uuid: 833f67a3-b39a-475d-b36b-ee1eafc7b47c
+langcode: en
+status: true
+dependencies: {  }
+id: chs_vendor
+label: 'CHS Vendor/Seller'
+weight: -8
+is_admin: null
+permissions: {  }

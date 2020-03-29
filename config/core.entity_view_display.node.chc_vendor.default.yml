@@ -1,0 +1,28 @@
+uuid: 8928a9b1-218e-428b-a8fe-fad6e66a6404
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.chc_vendor.body
+    - node.type.chc_vendor
+  module:
+    - text
+    - user
+id: node.chc_vendor.default
+targetEntityType: node
+bundle: chc_vendor
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

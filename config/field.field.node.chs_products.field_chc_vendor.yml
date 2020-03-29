@@ -1,0 +1,28 @@
+uuid: 46502e4a-e7f2-4633-8617-6c7d6cd006f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chc_vendor
+    - node.type.chc_vendor
+    - node.type.chs_products
+id: node.chs_products.field_chc_vendor
+field_name: field_chc_vendor
+entity_type: node
+bundle: chs_products
+label: 'CHC Vendor'
+description: 'Using node reference'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      chc_vendor: chc_vendor
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

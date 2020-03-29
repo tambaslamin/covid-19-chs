@@ -1,0 +1,8 @@
+uuid: 539f1f9c-d145-4091-a6a9-6ef1171d4b9c
+langcode: en
+status: true
+dependencies: {  }
+name: 'CHS Manufacturer'
+vid: chs_manufacturer
+description: 'CHS Manufacturer'
+weight: 0

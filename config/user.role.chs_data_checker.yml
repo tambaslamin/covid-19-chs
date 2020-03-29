@@ -1,0 +1,9 @@
+uuid: 524d3670-d31a-4a36-8196-f36bd55804fe
+langcode: en
+status: true
+dependencies: {  }
+id: chs_data_checker
+label: 'CHS Data Checker'
+weight: -5
+is_admin: null
+permissions: {  }

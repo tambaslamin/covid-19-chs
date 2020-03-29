@@ -1,0 +1,9 @@
+uuid: 6c3051fd-2a73-4ef7-a0dd-578351d36f33
+langcode: en
+status: true
+dependencies: {  }
+id: chs_content_manager
+label: 'CHS Content Manager'
+weight: -4
+is_admin: null
+permissions: {  }

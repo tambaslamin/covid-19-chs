@@ -2,6 +2,13 @@ uuid: 59901676-758d-48b1-a217-2123dba4e643
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.article
+    - node.type.chc_manufacturer
+    - node.type.chc_vendor
+    - node.type.chs_products
+    - node.type.page
+    - node.type.webform
   module:
     - content_moderation
 _core:
@@ -59,5 +66,12 @@ type_settings:
       from:
         - draft
         - published
-  entity_types: {  }
+  entity_types:
+    node:
+      - article
+      - chc_manufacturer
+      - chc_vendor
+      - chs_products
+      - page
+      - webform
   default_moderation_state: draft

@@ -1,0 +1,28 @@
+uuid: b61c3c92-5220-4859-a2b6-e006ca525364
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.chc_manufacturer.body
+    - node.type.chc_manufacturer
+  module:
+    - text
+    - user
+id: node.chc_manufacturer.default
+targetEntityType: node
+bundle: chc_manufacturer
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

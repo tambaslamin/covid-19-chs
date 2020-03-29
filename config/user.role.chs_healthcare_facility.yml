@@ -1,0 +1,9 @@
+uuid: bf75cd42-3001-4d83-b94d-3dbb79662ca4
+langcode: en
+status: true
+dependencies: {  }
+id: chs_healthcare_facility
+label: 'CHS Healthcare Facility/Buyer'
+weight: -6
+is_admin: null
+permissions: {  }

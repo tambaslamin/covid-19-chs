@@ -1,0 +1,30 @@
+uuid: 954a4015-6dd8-4dab-9c3f-8292e2a3b2bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.chc_manufacturer.body
+    - node.type.chc_manufacturer
+  module:
+    - text
+    - user
+id: node.chc_manufacturer.teaser
+targetEntityType: node
+bundle: chc_manufacturer
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
