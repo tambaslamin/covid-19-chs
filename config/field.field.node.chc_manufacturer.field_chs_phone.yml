@@ -1,0 +1,21 @@
+uuid: 87d5810e-1ec1-4b89-aa33-254c88d5d50e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chs_phone
+    - node.type.chc_manufacturer
+  module:
+    - telephone
+id: node.chc_manufacturer.field_chs_phone
+field_name: field_chs_phone
+entity_type: node
+bundle: chc_manufacturer
+label: 'CHS Phone'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,49 @@
+uuid: 954a4015-6dd8-4dab-9c3f-8292e2a3b2bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.chc_manufacturer.body
+    - field.field.node.chc_manufacturer.feeds_item
+    - field.field.node.chc_manufacturer.field_chs_address
+    - field.field.node.chc_manufacturer.field_chs_email
+    - field.field.node.chc_manufacturer.field_chs_fax
+    - field.field.node.chc_manufacturer.field_chs_logo
+    - field.field.node.chc_manufacturer.field_chs_phone
+    - field.field.node.chc_manufacturer.field_chs_website
+    - node.type.chc_manufacturer
+  module:
+    - text
+    - user
+id: node.chc_manufacturer.teaser
+targetEntityType: node
+bundle: chc_manufacturer
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  feeds_item: true
+  field_chs_address: true
+  field_chs_email: true
+  field_chs_fax: true
+  field_chs_logo: true
+  field_chs_phone: true
+  field_chs_website: true

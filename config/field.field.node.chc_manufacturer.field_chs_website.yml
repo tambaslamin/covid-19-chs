@@ -1,0 +1,23 @@
+uuid: 7ee3d844-9e89-49ad-994d-ac2857027303
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chs_website
+    - node.type.chc_manufacturer
+  module:
+    - link
+id: node.chc_manufacturer.field_chs_website
+field_name: field_chs_website
+entity_type: node
+bundle: chc_manufacturer
+label: 'CHS Website'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

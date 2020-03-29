@@ -1,0 +1,21 @@
+uuid: 53f1da82-d173-46f7-99f8-5d0d5d267a0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chs_fax
+    - node.type.chc_vendor
+  module:
+    - telephone
+id: node.chc_vendor.field_chs_fax
+field_name: field_chs_fax
+entity_type: node
+bundle: chc_vendor
+label: 'chs fax'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

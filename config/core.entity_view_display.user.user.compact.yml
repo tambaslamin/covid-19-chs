@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_chs_firstname
+    - field.field.user.user.field_chs_lastname
+    - field.field.user.user.field_chs_organization
+    - field.field.user.user.field_chs_user_type
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -26,4 +30,8 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  field_chs_firstname: true
+  field_chs_lastname: true
+  field_chs_organization: true
+  field_chs_user_type: true
   member_for: true
