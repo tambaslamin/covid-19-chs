@@ -1,48 +1,40 @@
-uuid: 8928a9b1-218e-428b-a8fe-fad6e66a6404
+uuid: d8196b52-711b-44c6-a570-e345543c042a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.chc_vendor.body
-    - field.field.node.chc_vendor.field_chs_address
-    - field.field.node.chc_vendor.field_chs_email
-    - field.field.node.chc_vendor.field_chs_fax
-    - field.field.node.chc_vendor.field_chs_logo
-    - field.field.node.chc_vendor.field_chs_phone
-    - field.field.node.chc_vendor.field_chs_website
-    - node.type.chc_vendor
+    - field.field.taxonomy_term.chs_manufacturer.field_chs_address
+    - field.field.taxonomy_term.chs_manufacturer.field_chs_email
+    - field.field.taxonomy_term.chs_manufacturer.field_chs_fax
+    - field.field.taxonomy_term.chs_manufacturer.field_chs_logo
+    - field.field.taxonomy_term.chs_manufacturer.field_chs_phone
+    - field.field.taxonomy_term.chs_manufacturer.field_chs_website
+    - taxonomy.vocabulary.chs_manufacturer
   module:
     - address
     - link
-    - telephone
     - text
-    - user
-id: node.chc_vendor.default
-targetEntityType: node
-bundle: chc_vendor
+id: taxonomy_term.chs_manufacturer.default
+targetEntityType: taxonomy_term
+bundle: chs_manufacturer
 mode: default
 content:
-  body:
-    label: above
+  description:
+    label: hidden
     type: text_default
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  content_moderation_control:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
   field_chs_address:
-    weight: 3
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: address_default
     region: content
   field_chs_email:
-    weight: 6
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -51,29 +43,28 @@ content:
   field_chs_fax:
     weight: 5
     label: above
-    settings:
-      title: ''
+    settings: {  }
     third_party_settings: {  }
-    type: telephone_link
+    type: basic_string
     region: content
   field_chs_logo:
-    weight: 1
+    type: entity_reference_entity_view
+    weight: 6
     label: above
     settings:
-      link: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
     region: content
   field_chs_phone:
-    weight: 4
+    weight: 3
     label: above
-    settings:
-      title: ''
+    settings: {  }
     third_party_settings: {  }
-    type: telephone_link
+    type: basic_string
     region: content
   field_chs_website:
-    weight: 7
+    weight: 4
     label: above
     settings:
       trim_length: 80
@@ -84,9 +75,4 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  links:
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden: {  }

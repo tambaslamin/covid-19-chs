@@ -1,23 +1,23 @@
-uuid: 3e56aa0f-0350-401b-acb6-3ce94a36a3b4
+uuid: d6ddd7d2-252c-4499-84cc-0100fd449dc0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
+    - field.storage.node.field_chs_website
     - node.type.chc_vendor
   module:
-    - text
-id: node.chc_vendor.body
-field_name: body
+    - link
+id: node.chc_vendor.field_chs_website
+field_name: field_chs_website
 entity_type: node
 bundle: chc_vendor
-label: Description
+label: 'CHS Website'
 description: ''
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: false
-  required_summary: false
-field_type: text_with_summary
+  link_type: 16
+  title: 0
+field_type: link

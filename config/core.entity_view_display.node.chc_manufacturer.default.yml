@@ -5,8 +5,17 @@ dependencies:
   config:
     - field.field.node.chc_manufacturer.body
     - field.field.node.chc_manufacturer.feeds_item
+    - field.field.node.chc_manufacturer.field_chs_address
+    - field.field.node.chc_manufacturer.field_chs_email
+    - field.field.node.chc_manufacturer.field_chs_fax
+    - field.field.node.chc_manufacturer.field_chs_logo
+    - field.field.node.chc_manufacturer.field_chs_phone
+    - field.field.node.chc_manufacturer.field_chs_website
     - node.type.chc_manufacturer
   module:
+    - address
+    - link
+    - telephone
     - text
     - user
 id: node.chc_manufacturer.default
@@ -15,21 +24,72 @@ bundle: chc_manufacturer
 mode: default
 content:
   body:
-    label: hidden
+    label: above
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   content_moderation_control:
-    weight: -20
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
+  field_chs_address:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_chs_email:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_chs_fax:
+    weight: 6
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_chs_logo:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_chs_phone:
+    weight: 5
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_chs_website:
+    weight: 7
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
-    weight: 100
+    weight: 8
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   feeds_item: true
