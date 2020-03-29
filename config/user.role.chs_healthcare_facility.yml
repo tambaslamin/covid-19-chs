@@ -6,4 +6,7 @@ id: chs_healthcare_facility
 label: 'CHS Healthcare Facility/Buyer'
 weight: -6
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access comments'
+  - 'edit own comments'
+  - 'post comments'

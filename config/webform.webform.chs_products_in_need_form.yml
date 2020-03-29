@@ -1,4 +1,4 @@
-uuid: ba72dd46-07ba-4166-99b1-de3306f15679
+uuid: fa1dfb66-665f-464f-8e51-9d0e29e61b6c
 langcode: en
 status: open
 dependencies: {  }
@@ -8,11 +8,11 @@ weight: 0
 uid: 1
 template: false
 archive: false
-id: chs_product_availability_form
-title: 'Seller Product Availability Form'
+id: chs_products_in_need_form
+title: 'Buyer Products In Need Form'
 description: ''
 category: CHS
-elements: "chs_product_name:\n  '#type': webform_term_select\n  '#title': 'CHS Product Name'\n  '#vocabulary': chs_product\n  '#breadcrumb_delimiter': ''\nchs_available_stock:\n  '#type': number\n  '#title': 'CHS Available Stock'\n  '#format_items': comma\nchs_website:\n  '#type': webform_link\n  '#title': 'CHS Website'\n  '#format_items': ol\n  '#title__access': false\ncaptcha:\n  '#type': captcha"
+elements: "chs_product_name:\n  '#type': webform_term_select\n  '#title': 'Product Name'\n  '#vocabulary': chs_product\n  '#breadcrumb_delimiter': ''\nchs_amount_needed:\n  '#type': number\n  '#title': 'CHS Amount needed'\n  '#format_items': comma\ncontact_full_name:\n  '#type': textfield\n  '#title': 'Contact Full Name'\n  '#format_items': comma\nchs_contact_email:\n  '#type': email\n  '#title': 'CHS Contact Email'\n  '#format_items': comma\nchs_contact_phone:\n  '#type': tel\n  '#title': 'CHS Contact Phone'\n  '#format_items': comma\nchs_contact_website:\n  '#type': webform_link\n  '#title': 'CHS Contact Website'\n  '#format_items': ol\n  '#title__access': false\nchs_contact_address:\n  '#type': webform_address\n  '#title': 'CHS Contact Address'\n  '#format_items': ol\ncaptcha:\n  '#type': captcha"
 css: ''
 javascript: ''
 settings:
@@ -57,9 +57,7 @@ settings:
   submission_label: ''
   submission_log: false
   submission_views: {  }
-  submission_views_replace:
-    webform_routes: {  }
-    node_routes: {  }
+  submission_views_replace: {  }
   submission_user_columns: {  }
   submission_user_duplicate: false
   submission_access_denied: default
@@ -94,7 +92,7 @@ settings:
   preview_excluded_elements: {  }
   preview_exclude_empty: true
   preview_exclude_empty_checkbox: false
-  draft: authenticated
+  draft: none
   draft_multiple: false
   draft_auto_save: false
   draft_saved_message: ''
@@ -134,8 +132,7 @@ settings:
 access:
   create:
     roles:
-      - chs_vendor
-      - chs_manufacturer
+      - chs_healthcare_facility
       - chs_data_checker
       - chs_content_manager
       - administrator
@@ -165,8 +162,7 @@ access:
     permissions: {  }
   view_own:
     roles:
-      - chs_vendor
-      - chs_manufacturer
+      - chs_healthcare_facility
       - chs_data_checker
       - chs_content_manager
       - administrator
@@ -174,8 +170,7 @@ access:
     permissions: {  }
   update_own:
     roles:
-      - chs_vendor
-      - chs_manufacturer
+      - chs_healthcare_facility
       - chs_data_checker
       - chs_content_manager
       - administrator

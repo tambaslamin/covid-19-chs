@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.chc_manufacturer.body
+    - field.field.node.chc_manufacturer.feeds_item
     - node.type.chc_manufacturer
+    - workflows.workflow.editorial
   module:
+    - content_moderation
     - path
     - text
 id: node.chc_manufacturer.default
@@ -28,6 +31,12 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
     third_party_settings: {  }
   path:
     type: path
@@ -79,4 +88,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  feeds_item: true

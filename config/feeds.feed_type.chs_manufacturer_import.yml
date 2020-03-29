@@ -1,0 +1,62 @@
+uuid: 726b5e0f-bfb6-467e-8127-02a2ca0e8df9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.chc_manufacturer.title
+    - field.field.node.chc_manufacturer.body
+    - node.type.chc_manufacturer
+  module:
+    - node
+label: 'CHS Manufacturer Import'
+id: chs_manufacturer_import
+description: 'Import Manufacturers'
+help: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: chc_manufacturer
+custom_sources:
+  title:
+    label: Title
+    value: Title
+    machine_name: title
+  description_text:
+    label: 'Description Text'
+    value: 'Description Text'
+    machine_name: description_text
+  description_summary:
+    label: 'Description Summary'
+    value: 'Description Summary'
+    machine_name: description_summary
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    unique:
+      value: '1'
+  -
+    target: body
+    map:
+      value: description_text
+      summary: description_summary
+    settings:
+      format: plain_text

@@ -18,6 +18,10 @@ dependencies:
     - field.storage.node.field_chs_website
     - node.type.chs_products
     - system.menu.main
+    - user.role.administrator
+    - user.role.chs_content_manager
+    - user.role.chs_data_checker
+    - user.role.chs_healthcare_facility
   module:
     - link
     - node
@@ -40,9 +44,13 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            chs_healthcare_facility: chs_healthcare_facility
+            chs_data_checker: chs_data_checker
+            chs_content_manager: chs_content_manager
+            administrator: administrator
       cache:
         type: tag
         options: {  }
@@ -1139,7 +1147,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_chc_manufacturer'
@@ -1765,7 +1773,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_chc_manufacturer'
@@ -1797,7 +1805,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_chc_manufacturer'
@@ -1820,7 +1828,7 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      path: available-products
+      path: products
       menu:
         type: normal
         title: 'CHS Available Products'
@@ -1833,7 +1841,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_chc_manufacturer'

@@ -6,4 +6,7 @@ id: chs_vendor
 label: 'CHS Vendor/Seller'
 weight: -8
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access comments'
+  - 'edit own comments'
+  - 'post comments'

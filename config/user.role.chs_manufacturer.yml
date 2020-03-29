@@ -6,4 +6,7 @@ id: chs_manufacturer
 label: 'CHS Manufacturer/Seller'
 weight: -7
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access comments'
+  - 'edit own comments'
+  - 'post comments'

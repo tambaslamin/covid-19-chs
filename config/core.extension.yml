@@ -30,6 +30,9 @@ module:
   embed: 0
   encrypt: 0
   entity_embed: 0
+  feeds: 0
+  feeds_ex: 0
+  feeds_tamper: 0
   field: 0
   field_ui: 0
   file: 0
@@ -86,7 +89,9 @@ module:
   shortcut: 0
   simple_oauth: 0
   system: 0
+  tamper: 0
   taxonomy: 0
+  taxonomy_manager: 0
   telephone: 0
   text: 0
   token: 0

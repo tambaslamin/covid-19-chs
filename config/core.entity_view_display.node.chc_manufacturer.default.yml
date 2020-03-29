@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.chc_manufacturer.body
+    - field.field.node.chc_manufacturer.feeds_item
     - node.type.chc_manufacturer
   module:
     - text
@@ -20,9 +21,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  feeds_item: true
