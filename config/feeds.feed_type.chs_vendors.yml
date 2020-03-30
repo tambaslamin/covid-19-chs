@@ -1,0 +1,153 @@
+uuid: 6612fa9d-d2bb-434a-a9d0-f78b8e227e80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.chc_vendor.body
+    - field.field.node.chc_vendor.field_chs_email
+    - field.field.node.chc_vendor.field_chs_fax
+    - field.field.node.chc_vendor.field_chs_logo
+    - field.field.node.chc_vendor.field_chs_phone
+    - field.field.node.chc_vendor.field_chs_website
+    - node.type.chc_vendor
+  module:
+    - node
+label: 'CHS Vendors'
+id: chs_vendors
+description: Vendors
+help: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  update_existing: 0
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 1
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: chc_vendor
+custom_sources:
+  title:
+    label: Title
+    value: Title
+    machine_name: title
+  description_text:
+    label: 'Description Text'
+    value: 'Description Text'
+    machine_name: description_text
+  description_summary:
+    label: 'Description Summary'
+    value: 'Description Summary'
+    machine_name: description_summary
+  phone:
+    label: Phone
+    value: Phone
+    machine_name: phone
+  website:
+    label: Website
+    value: Website
+    machine_name: website
+  website_name:
+    label: 'Website Name'
+    value: 'Website Name'
+    machine_name: website_name
+  email:
+    label: Email
+    value: Email
+    machine_name: email
+  logo:
+    label: Logo
+    value: Logo
+    machine_name: logo
+  fax:
+    label: Fax
+    value: Fax
+    machine_name: fax
+  vendor_title:
+    label: 'Vendor Title'
+    value: 'Vendor Title'
+    machine_name: vendor_title
+  vendor_description_text:
+    label: 'Vendor Description Text'
+    value: 'Vendor Description Text'
+    machine_name: vendor_description_text
+  vendor_description_summary:
+    label: 'Vendor Description Summary'
+    value: 'Vendor Description Summary'
+    machine_name: vendor_description_summary
+  vendor_phone:
+    label: 'Vendor Phone'
+    value: 'Vendor Phone'
+    machine_name: vendor_phone
+  vendor_website:
+    label: 'Vendor Website'
+    value: 'Vendor Website'
+    machine_name: vendor_website
+  vendor_website_name:
+    label: 'Vendor Website Name'
+    value: 'Vendor Website Name'
+    machine_name: vendor_website_name
+  vendor_email:
+    label: 'Vendor Email'
+    value: 'Vendor Email'
+    machine_name: vendor_email
+  vendor_logo:
+    label: 'Vendor Logo'
+    value: 'Vendor Logo'
+    machine_name: vendor_logo
+  vendor_fax:
+    label: 'Vendor Fax'
+    value: 'Vendor Fax'
+    machine_name: vendor_fax
+mappings:
+  -
+    target: title
+    map:
+      value: vendor_title
+    unique:
+      value: '1'
+  -
+    target: body
+    map:
+      value: vendor_description_text
+      summary: vendor_description_summary
+    settings:
+      format: plain_text
+  -
+    target: field_chs_phone
+    map:
+      value: vendor_phone
+  -
+    target: field_chs_website
+    map:
+      uri: vendor_website
+      title: vendor_website_name
+  -
+    target: field_chs_email
+    map:
+      value: vendor_email
+    unique: {  }
+    settings:
+      defuse: false
+  -
+    target: field_chs_logo
+    map:
+      target_id: vendor_logo
+    settings:
+      reference_by: name
+      autocreate: false
+  -
+    target: field_chs_fax
+    map:
+      value: vendor_fax

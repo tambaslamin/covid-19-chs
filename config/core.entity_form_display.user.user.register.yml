@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.register
+    - field.field.user.user.feeds_item
     - field.field.user.user.field_chs_firstname
     - field.field.user.user.field_chs_lastname
     - field.field.user.user.field_chs_organization
@@ -47,6 +48,7 @@ content:
     third_party_settings: {  }
 hidden:
   contact: true
+  feeds_item: true
   field_chs_organization: true
   language: true
   path: true

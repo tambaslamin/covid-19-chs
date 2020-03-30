@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.chc_vendor.body
-    - field.field.node.chc_vendor.field_chs_address
+    - field.field.node.chc_vendor.feeds_item
     - field.field.node.chc_vendor.field_chs_email
     - field.field.node.chc_vendor.field_chs_fax
     - field.field.node.chc_vendor.field_chs_logo
@@ -13,7 +13,6 @@ dependencies:
     - node.type.chc_vendor
     - workflows.workflow.editorial
   module:
-    - address
     - content_moderation
     - link
     - media_library
@@ -41,12 +40,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_chs_address:
-    weight: 6
-    settings: {  }
-    third_party_settings: {  }
-    type: address_default
-    region: content
   field_chs_email:
     weight: 2
     settings:
@@ -140,4 +133,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  feeds_item: true

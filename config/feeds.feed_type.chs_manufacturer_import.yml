@@ -5,6 +5,11 @@ dependencies:
   config:
     - core.base_field_override.node.chc_manufacturer.title
     - field.field.node.chc_manufacturer.body
+    - field.field.node.chc_manufacturer.field_chs_email
+    - field.field.node.chc_manufacturer.field_chs_fax
+    - field.field.node.chc_manufacturer.field_chs_logo
+    - field.field.node.chc_manufacturer.field_chs_phone
+    - field.field.node.chc_manufacturer.field_chs_website
     - node.type.chc_manufacturer
   module:
     - node
@@ -46,6 +51,34 @@ custom_sources:
     label: 'Description Summary'
     value: 'Description Summary'
     machine_name: description_summary
+  phone:
+    label: Phone
+    value: Phone
+    machine_name: phone
+  website:
+    label: Website
+    value: Website
+    machine_name: website
+  '':
+    label: ''
+    value: ''
+    machine_name: ''
+  email:
+    label: Email
+    value: Email
+    machine_name: email
+  logo:
+    label: Logo
+    value: Logo
+    machine_name: logo
+  fax:
+    label: Fax
+    value: Fax
+    machine_name: fax
+  website_name:
+    label: 'Website Name'
+    value: 'Website Name'
+    machine_name: website_name
 mappings:
   -
     target: title
@@ -60,3 +93,30 @@ mappings:
       summary: description_summary
     settings:
       format: plain_text
+  -
+    target: field_chs_phone
+    map:
+      value: phone
+  -
+    target: field_chs_website
+    map:
+      uri: website
+      title: website_name
+  -
+    target: field_chs_email
+    map:
+      value: email
+    unique: {  }
+    settings:
+      defuse: false
+  -
+    target: field_chs_logo
+    map:
+      target_id: logo
+    settings:
+      reference_by: name
+      autocreate: false
+  -
+    target: field_chs_fax
+    map:
+      value: fax

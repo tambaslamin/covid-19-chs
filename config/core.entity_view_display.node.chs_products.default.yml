@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.chs_products.body
+    - field.field.node.chs_products.feeds_item
     - field.field.node.chs_products.field_chc_manufacturer
     - field.field.node.chs_products.field_chc_vendor
     - field.field.node.chs_products.field_chs_comments
@@ -34,6 +35,11 @@ content:
     label: above
     type: text_default
     weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -159,4 +165,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  feeds_item: true

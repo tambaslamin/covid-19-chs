@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.chc_manufacturer.body
     - field.field.node.chc_manufacturer.feeds_item
-    - field.field.node.chc_manufacturer.field_chs_address
     - field.field.node.chc_manufacturer.field_chs_email
     - field.field.node.chc_manufacturer.field_chs_fax
     - field.field.node.chc_manufacturer.field_chs_logo
@@ -41,7 +40,6 @@ content:
     region: content
 hidden:
   feeds_item: true
-  field_chs_address: true
   field_chs_email: true
   field_chs_fax: true
   field_chs_logo: true

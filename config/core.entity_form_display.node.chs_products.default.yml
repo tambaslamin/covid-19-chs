@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.chs_products.body
+    - field.field.node.chs_products.feeds_item
     - field.field.node.chs_products.field_chc_manufacturer
     - field.field.node.chs_products.field_chc_vendor
     - field.field.node.chs_products.field_chs_comments
@@ -216,4 +217,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  feeds_item: true

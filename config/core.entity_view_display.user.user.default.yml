@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.feeds_item
     - field.field.user.user.field_chs_firstname
     - field.field.user.user.field_chs_lastname
     - field.field.user.user.field_chs_organization
@@ -65,4 +66,5 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
-hidden: {  }
+hidden:
+  feeds_item: true

@@ -132,6 +132,10 @@ settings:
 access:
   create:
     roles:
+      - anonymous
+      - authenticated
+      - chs_vendor
+      - chs_manufacturer
       - chs_healthcare_facility
       - chs_data_checker
       - chs_content_manager

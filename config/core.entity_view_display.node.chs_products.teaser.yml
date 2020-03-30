@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.chs_products.body
+    - field.field.node.chs_products.feeds_item
     - field.field.node.chs_products.field_chc_manufacturer
     - field.field.node.chs_products.field_chc_vendor
     - field.field.node.chs_products.field_chs_comments
@@ -35,6 +36,11 @@ content:
     weight: 1
     settings:
       trim_length: 600
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
     third_party_settings: {  }
     region: content
   field_chs_in_stock:
@@ -78,6 +84,7 @@ content:
       link: true
     third_party_settings: {  }
 hidden:
+  feeds_item: true
   field_chc_manufacturer: true
   field_chc_vendor: true
   field_chs_comments: true
