@@ -12,8 +12,7 @@ _core:
 id: bookmark
 label: Bookmark
 bundles:
-  - article
-  - page
+  - chs_products
 entity_type: node
 global: false
 weight: 0
@@ -27,11 +26,10 @@ unflag_denied_text: ''
 flag_type: 'entity:node'
 link_type: ajax_link
 flagTypeConfig:
-  show_in_links:
-    - full
-    - teaser
+  show_in_links: {  }
   show_as_field: true
   show_on_form: false
   show_contextual_link: false
-  extra_permissions: {  }
+  extra_permissions:
+    owner: '0'
 linkTypeConfig: {  }
