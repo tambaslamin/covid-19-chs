@@ -411,8 +411,8 @@ display:
         type: normal
         title: 'Vendors and Manufacturers'
         menu_name: main
-        weight: -48
-        parent: 'menu_link_content:cac209d2-7dfd-4af2-a585-748fb680e3e6'
+        weight: -50
+        parent: 'menu_link_content:b27f8bb6-a5f0-4050-b94e-d34ba3426422'
     cache_metadata:
       max-age: -1
       contexts:

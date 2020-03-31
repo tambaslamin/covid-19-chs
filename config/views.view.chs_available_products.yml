@@ -1400,7 +1400,7 @@ display:
         title: 'Available Products'
         description: ''
         expanded: false
-        parent: 'menu_link_content:da275100-d0ea-4462-982a-f060da601f31'
+        parent: 'menu_link_content:6248ba56-b753-4d93-a1c0-a75940407c91'
         weight: -50
         context: '0'
         menu_name: main
