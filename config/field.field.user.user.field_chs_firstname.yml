@@ -10,7 +10,7 @@ id: user.user.field_chs_firstname
 field_name: field_chs_firstname
 entity_type: user
 bundle: user
-label: 'CHS Firstname'
+label: Firstname
 description: ''
 required: true
 translatable: false

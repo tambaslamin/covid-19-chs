@@ -10,7 +10,7 @@ id: node.chs_products.field_chs_product_name
 field_name: field_chs_product_name
 entity_type: node
 bundle: chs_products
-label: 'CHS Product Name'
+label: 'Product Name'
 description: ''
 required: true
 translatable: false

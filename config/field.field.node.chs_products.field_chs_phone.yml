@@ -11,7 +11,7 @@ id: node.chs_products.field_chs_phone
 field_name: field_chs_phone
 entity_type: node
 bundle: chs_products
-label: 'CHS Phone'
+label: Phone
 description: ''
 required: false
 translatable: false

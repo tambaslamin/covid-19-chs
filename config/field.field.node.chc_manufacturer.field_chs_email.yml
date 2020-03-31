@@ -9,7 +9,7 @@ id: node.chc_manufacturer.field_chs_email
 field_name: field_chs_email
 entity_type: node
 bundle: chc_manufacturer
-label: 'CHS email'
+label: Email
 description: ''
 required: false
 translatable: false

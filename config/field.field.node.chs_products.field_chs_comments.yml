@@ -9,7 +9,7 @@ id: node.chs_products.field_chs_comments
 field_name: field_chs_comments
 entity_type: node
 bundle: chs_products
-label: 'CHS Comments'
+label: Comments
 description: ''
 required: false
 translatable: false

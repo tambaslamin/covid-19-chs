@@ -9,7 +9,7 @@ id: node.chs_products.field_chs_sku_number
 field_name: field_chs_sku_number
 entity_type: node
 bundle: chs_products
-label: 'CHS SKU Number'
+label: 'SKU Number'
 description: ''
 required: false
 translatable: false

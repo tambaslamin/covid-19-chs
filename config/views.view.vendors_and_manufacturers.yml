@@ -6,6 +6,9 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.chs_manufacturer
     - taxonomy.vocabulary.chs_vendor
+    - user.role.administrator
+    - user.role.chs_content_manager
+    - user.role.chs_data_checker
   module:
     - taxonomy
     - text
@@ -25,9 +28,12 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            chs_data_checker: chs_data_checker
+            chs_content_manager: chs_content_manager
+            administrator: administrator
       cache:
         type: tag
         options: {  }
@@ -368,7 +374,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.permissions
+        - user.roles
       tags: {  }
   block_1:
     display_plugin: block
@@ -390,7 +396,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - user.permissions
+        - user.roles
       tags: {  }
   page_1:
     display_plugin: page
@@ -405,6 +411,7 @@ display:
         type: normal
         title: 'Vendors and Manufacturers'
         menu_name: main
+        weight: -46
     cache_metadata:
       max-age: -1
       contexts:
@@ -412,5 +419,5 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.permissions
+        - user.roles
       tags: {  }

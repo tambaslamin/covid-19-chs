@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: chs_healthcare_facility
-label: 'CHS Healthcare Facility/Buyer'
+label: 'Buyer (Healthcare Facility)'
 weight: -6
 is_admin: null
 permissions:

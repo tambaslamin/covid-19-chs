@@ -10,7 +10,7 @@ id: node.chs_products.field_chc_vendor
 field_name: field_chc_vendor
 entity_type: node
 bundle: chs_products
-label: 'CHC Vendor'
+label: Vendor
 description: 'Using node reference'
 required: false
 translatable: false
