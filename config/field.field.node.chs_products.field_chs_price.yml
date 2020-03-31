@@ -9,7 +9,7 @@ id: node.chs_products.field_chs_price
 field_name: field_chs_price
 entity_type: node
 bundle: chs_products
-label: Price
+label: 'Product Price (USD)'
 description: ''
 required: false
 translatable: false
@@ -18,6 +18,6 @@ default_value_callback: ''
 settings:
   min: null
   max: null
-  prefix: ''
+  prefix: USD
   suffix: ''
 field_type: decimal

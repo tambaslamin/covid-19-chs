@@ -11,7 +11,7 @@ id: node.chs_products.field_chs_website
 field_name: field_chs_website
 entity_type: node
 bundle: chs_products
-label: Website
+label: 'Website (TBD)'
 description: ''
 required: false
 translatable: false

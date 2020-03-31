@@ -11,7 +11,7 @@ id: node.chs_products.field_chs_status
 field_name: field_chs_status
 entity_type: node
 bundle: chs_products
-label: Status
+label: 'Status  (TBD)'
 description: ''
 required: true
 translatable: false

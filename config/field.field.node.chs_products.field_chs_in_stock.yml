@@ -9,7 +9,7 @@ id: node.chs_products.field_chs_in_stock
 field_name: field_chs_in_stock
 entity_type: node
 bundle: chs_products
-label: 'In Stock'
+label: 'Amount In Stock'
 description: ''
 required: false
 translatable: false
