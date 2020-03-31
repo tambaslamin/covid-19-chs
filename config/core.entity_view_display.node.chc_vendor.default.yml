@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.chc_vendor.body
-    - field.field.node.chc_vendor.field_chs_address
+    - field.field.node.chc_vendor.feeds_item
     - field.field.node.chc_vendor.field_chs_email
     - field.field.node.chc_vendor.field_chs_fax
     - field.field.node.chc_vendor.field_chs_logo
@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.chc_vendor.field_chs_website
     - node.type.chc_vendor
   module:
-    - address
     - link
     - telephone
     - text
@@ -34,13 +33,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_chs_address:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: address_default
-    region: content
   field_chs_email:
     weight: 6
     label: above
@@ -89,4 +81,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  feeds_item: true

@@ -274,8 +274,8 @@ display:
         title: Vendors
         description: Vendors
         expanded: false
-        parent: ''
-        weight: -47
+        parent: 'menu_link_content:cac209d2-7dfd-4af2-a585-748fb680e3e6'
+        weight: -49
         context: '0'
         menu_name: main
     cache_metadata:

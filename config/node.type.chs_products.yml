@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'CHS Products'
+name: Products
 type: chs_products
 description: 'COVID-19 Critical Healthcare Item Availability list'
 help: ''

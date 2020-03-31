@@ -10,7 +10,7 @@ id: node.chc_vendor.field_chs_logo
 field_name: field_chs_logo
 entity_type: node
 bundle: chc_vendor
-label: 'Chs logo'
+label: Logo
 description: ''
 required: false
 translatable: true

@@ -10,7 +10,7 @@ id: node.chs_products.field_chs_manufacturer
 field_name: field_chs_manufacturer
 entity_type: node
 bundle: chs_products
-label: 'CHS Manufacturer'
+label: Manufacturer
 description: 'Using Taxonomy reference'
 required: true
 translatable: false

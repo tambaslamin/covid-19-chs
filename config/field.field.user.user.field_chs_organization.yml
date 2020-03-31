@@ -13,7 +13,7 @@ id: user.user.field_chs_organization
 field_name: field_chs_organization
 entity_type: user
 bundle: user
-label: 'CHS Organization'
+label: Organization
 description: ''
 required: false
 translatable: false

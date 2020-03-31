@@ -10,7 +10,7 @@ id: node.chs_products.field_chs_vendor
 field_name: field_chs_vendor
 entity_type: node
 bundle: chs_products
-label: 'CHS Vendor'
+label: Vendor
 description: 'Using Taxonomy reference'
 required: true
 translatable: false

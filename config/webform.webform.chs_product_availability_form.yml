@@ -134,11 +134,7 @@ settings:
 access:
   create:
     roles:
-      - chs_vendor
-      - chs_manufacturer
-      - chs_data_checker
-      - chs_content_manager
-      - administrator
+      - authenticated
     users: {  }
     permissions: {  }
   view_any:
@@ -166,7 +162,6 @@ access:
   view_own:
     roles:
       - chs_vendor
-      - chs_manufacturer
       - chs_data_checker
       - chs_content_manager
       - administrator
@@ -175,7 +170,6 @@ access:
   update_own:
     roles:
       - chs_vendor
-      - chs_manufacturer
       - chs_data_checker
       - chs_content_manager
       - administrator

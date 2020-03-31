@@ -11,7 +11,7 @@ id: node.chc_vendor.field_chs_fax
 field_name: field_chs_fax
 entity_type: node
 bundle: chc_vendor
-label: 'chs fax'
+label: Fax
 description: ''
 required: false
 translatable: true

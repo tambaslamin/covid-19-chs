@@ -11,9 +11,9 @@ id: user.user.field_chs_user_type
 field_name: field_chs_user_type
 entity_type: user
 bundle: user
-label: 'CHS User Type'
+label: 'How do you identify yourself'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

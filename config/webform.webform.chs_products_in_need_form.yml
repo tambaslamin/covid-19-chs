@@ -132,10 +132,7 @@ settings:
 access:
   create:
     roles:
-      - chs_healthcare_facility
-      - chs_data_checker
-      - chs_content_manager
-      - administrator
+      - authenticated
     users: {  }
     permissions: {  }
   view_any:

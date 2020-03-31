@@ -1,0 +1,31 @@
+uuid: 88cf52d0-c79e-4549-8ad3-9ade6082806c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:99112ad2-ef37-4c06-94cd-ff43f837e214'
+  module:
+    - block_content
+    - system
+  theme:
+    - covid19demo
+id: homepagewelcome
+theme: covid19demo
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:99112ad2-ef37-4c06-94cd-ff43f837e214'
+settings:
+  id: 'block_content:99112ad2-ef37-4c06-94cd-ff43f837e214'
+  label: 'Homepage Welcome'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

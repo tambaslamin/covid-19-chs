@@ -11,7 +11,7 @@ id: node.chc_vendor.field_chs_website
 field_name: field_chs_website
 entity_type: node
 bundle: chc_vendor
-label: 'CHS Website'
+label: Website
 description: ''
 required: false
 translatable: true

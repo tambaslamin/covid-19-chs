@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: chs_vendor
-label: 'CHS Vendor/Seller'
-weight: -8
+label: 'Seller (vendor/manufacturer)'
+weight: -7
 is_admin: null
 permissions:
   - 'access comments'

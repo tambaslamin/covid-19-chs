@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: chs_data_checker
-label: 'CHS Data Checker'
+label: 'Data Checker'
 weight: -5
 is_admin: null
 permissions:
