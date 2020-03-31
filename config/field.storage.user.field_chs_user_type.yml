@@ -12,14 +12,14 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: 'Seller (Vendor/Manufacturer)'
-      label: 'Seller (Vendor/Manufacturer)'
+      value: Vendor
+      label: Vendor
     -
-      value: 'Buyer (Healthcare Facility)'
-      label: 'Buyer (Healthcare Facility)'
+      value: Manufacturer
+      label: Manufacturer
     -
-      value: Other
-      label: Other
+      value: 'Buyer/Healthcare Facility'
+      label: 'Buyer/Healthcare Facility'
   allowed_values_function: ''
 module: options
 locked: false
