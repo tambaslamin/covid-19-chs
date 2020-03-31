@@ -11,7 +11,7 @@ id: user.user.field_chs_user_type
 field_name: field_chs_user_type
 entity_type: user
 bundle: user
-label: 'How do you identify yourself'
+label: 'What is your role?'
 description: ''
 required: true
 translatable: false

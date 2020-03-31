@@ -2,7 +2,7 @@ uuid: 33dcbaa5-d59b-4690-b9b5-132088ab01de
 langcode: en
 status: true
 dependencies: {  }
-name: 'CHS Product'
+name: Product
 vid: chs_product
-description: 'CHS Product'
+description: Product
 weight: 0

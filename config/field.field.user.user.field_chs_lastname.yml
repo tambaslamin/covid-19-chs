@@ -10,7 +10,7 @@ id: user.user.field_chs_lastname
 field_name: field_chs_lastname
 entity_type: user
 bundle: user
-label: Lastname
+label: 'Last Name'
 description: ''
 required: true
 translatable: false

@@ -10,9 +10,9 @@ id: node.chs_products.field_chs_product_name
 field_name: field_chs_product_name
 entity_type: node
 bundle: chs_products
-label: 'Product Name'
+label: 'Product Name  (TBD)'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

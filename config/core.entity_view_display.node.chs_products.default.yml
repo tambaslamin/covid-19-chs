@@ -7,20 +7,32 @@ dependencies:
     - field.field.node.chs_products.feeds_item
     - field.field.node.chs_products.field_chc_manufacturer
     - field.field.node.chs_products.field_chc_vendor
+    - field.field.node.chs_products.field_chs_availability_status
     - field.field.node.chs_products.field_chs_comments
     - field.field.node.chs_products.field_chs_in_stock
     - field.field.node.chs_products.field_chs_manufacturer
+    - field.field.node.chs_products.field_chs_manufacturer_number
+    - field.field.node.chs_products.field_chs_manufacturer_phone_num
     - field.field.node.chs_products.field_chs_phone
     - field.field.node.chs_products.field_chs_price
+    - field.field.node.chs_products.field_chs_product_category
     - field.field.node.chs_products.field_chs_product_name
+    - field.field.node.chs_products.field_chs_product_size
+    - field.field.node.chs_products.field_chs_product_type
     - field.field.node.chs_products.field_chs_sku_number
     - field.field.node.chs_products.field_chs_status
     - field.field.node.chs_products.field_chs_supplier_reviewed
     - field.field.node.chs_products.field_chs_uom
     - field.field.node.chs_products.field_chs_vendor
+    - field.field.node.chs_products.field_chs_vendor_address
+    - field.field.node.chs_products.field_chs_vendor_email
+    - field.field.node.chs_products.field_chs_vendor_fulfillment_cen
+    - field.field.node.chs_products.field_chs_vendor_phone_number
+    - field.field.node.chs_products.field_chs_vendor_website
     - field.field.node.chs_products.field_chs_website
     - node.type.chs_products
   module:
+    - address
     - link
     - options
     - telephone
@@ -34,40 +46,31 @@ content:
   body:
     label: above
     type: text_default
-    weight: 4
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   content_moderation_control:
-    weight: -20
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_chc_manufacturer:
-    weight: 6
+  field_chs_availability_status:
+    weight: 5
     label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_chc_vendor:
-    weight: 8
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+    type: list_default
     region: content
   field_chs_comments:
-    weight: 13
+    weight: 19
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_chs_in_stock:
-    weight: 2
+    weight: 7
     label: above
     settings:
       thousand_separator: ','
@@ -76,23 +79,31 @@ content:
     type: number_integer
     region: content
   field_chs_manufacturer:
-    weight: 5
+    weight: 17
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_chs_phone:
-    weight: 9
+  field_chs_manufacturer_number:
+    weight: 8
     label: above
     settings:
-      title: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: telephone_link
+    type: string
+    region: content
+  field_chs_manufacturer_phone_num:
+    weight: 18
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_chs_price:
-    weight: 11
+    weight: 3
     label: above
     settings:
       thousand_separator: ','
@@ -102,8 +113,24 @@ content:
     third_party_settings: {  }
     type: number_decimal
     region: content
-  field_chs_product_name:
-    weight: 0
+  field_chs_product_category:
+    weight: 10
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_chs_product_size:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_chs_product_type:
+    weight: 9
     label: above
     settings:
       link: true
@@ -111,29 +138,22 @@ content:
     type: entity_reference_label
     region: content
   field_chs_sku_number:
-    weight: 1
+    weight: 6
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_chs_status:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_chs_supplier_reviewed:
-    weight: 14
+    weight: 20
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_chs_uom:
-    weight: 12
+    weight: 4
     label: above
     settings:
       link_to_entity: false
@@ -141,15 +161,45 @@ content:
     type: string
     region: content
   field_chs_vendor:
-    weight: 7
+    weight: 11
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_chs_website:
-    weight: 10
+  field_chs_vendor_address:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_chs_vendor_email:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_chs_vendor_fulfillment_cen:
+    weight: 13
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_chs_vendor_phone_number:
+    weight: 14
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_chs_vendor_website:
+    weight: 16
     label: above
     settings:
       trim_length: 80
@@ -160,10 +210,21 @@ content:
     third_party_settings: {  }
     type: link
     region: content
+  flag_bookmark:
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   links:
-    weight: 15
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   feeds_item: true
+  field_chc_manufacturer: true
+  field_chc_vendor: true
+  field_chs_phone: true
+  field_chs_product_name: true
+  field_chs_status: true
+  field_chs_website: true

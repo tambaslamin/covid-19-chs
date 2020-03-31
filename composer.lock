@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aad643161a4efc050179a9d38b5369d0",
+    "content-hash": "cf60e6237c7cf926b20d0af3ec3a5d82",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3869,6 +3869,69 @@
             }
         },
         {
+            "name": "drupal/entity",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "ac359ada43416ca3a8d0e44f2985b0a9fae07625"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1582735747",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "dixon_",
+                    "homepage": "https://www.drupal.org/user/239911"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                }
+            ],
+            "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
+            "homepage": "http://drupal.org/project/entity",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity"
+            }
+        },
+        {
             "name": "drupal/entity_block",
             "version": "1.0.0-beta2",
             "source": {
@@ -5199,6 +5262,53 @@
             }
         },
         {
+            "name": "drupal/login_onlyemail",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/login_onlyemail.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/login_onlyemail-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "a6212606d43b6779d83d2333083ba76cb80eebf7"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1576612932",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "aabramos",
+                    "homepage": "https://www.drupal.org/user/2904491"
+                }
+            ],
+            "description": "Allow users to log in exclusively with the email address using the input box on the login form.",
+            "homepage": "https://www.drupal.org/project/login_onlyemail",
+            "support": {
+                "source": "https://git.drupalcode.org/project/login_onlyemail"
+            }
+        },
+        {
             "name": "drupal/login_security",
             "version": "1.5.0",
             "source": {
@@ -5263,6 +5373,61 @@
             "homepage": "https://www.drupal.org/project/login_security",
             "support": {
                 "source": "https://git.drupalcode.org/project/login_security"
+            }
+        },
+        {
+            "name": "drupal/mail_login",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/mail_login.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/mail_login-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "ced04e9744bbcff0c38b7124913d1ac66e750d0b"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1583902531",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mohammad AlQanneh",
+                    "homepage": "https://www.drupal.org/u/mqanneh",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "This module enables users to login by email address.",
+            "homepage": "https://www.drupal.org/project/mail_login",
+            "keywords": [
+                "drupal",
+                "php",
+                "user"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/mail_login",
+                "issues": "http://drupal.org/project/issues/mail_login",
+                "email": "mqanneh@gmail.com"
             }
         },
         {
@@ -6178,6 +6343,77 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/phpmailer_smtp",
                 "issues": "https://www.drupal.org/project/issues/phpmailer_smtp"
+            }
+        },
+        {
+            "name": "drupal/profile",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/profile.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "b8f6aca4f432228e614dca0a50cb187e936e4825"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9",
+                "drupal/entity": "^1.0-rc2"
+            },
+            "require-dev": {
+                "drupal/token": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1582134004",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "daggerhart",
+                    "homepage": "https://www.drupal.org/user/167806"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "pcambra",
+                    "homepage": "https://www.drupal.org/user/122101"
+                }
+            ],
+            "description": "Provides configurable user profiles.",
+            "homepage": "http://drupal.org/project/profile",
+            "support": {
+                "source": "https://git.drupalcode.org/project/profile"
             }
         },
         {

@@ -3,23 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.base_field_override.node.chs_products.title
-    - field.field.node.chs_products.body
-    - field.field.node.chs_products.field_chc_manufacturer
-    - field.field.node.chs_products.field_chc_vendor
-    - field.field.node.chs_products.field_chs_comments
-    - field.field.node.chs_products.field_chs_manufacturer
-    - field.field.node.chs_products.field_chs_phone
-    - field.field.node.chs_products.field_chs_price
-    - field.field.node.chs_products.field_chs_product_name
-    - field.field.node.chs_products.field_chs_supplier_reviewed
-    - field.field.node.chs_products.field_chs_uom
-    - field.field.node.chs_products.field_chs_vendor
-    - field.field.node.chs_products.field_chs_website
     - node.type.chs_products
   module:
     - node
-label: 'CHS Products'
+label: Products
 id: chs_products
 description: Products
 help: ''
@@ -105,82 +92,4 @@ custom_sources:
     label: 'Supplier Reviewed'
     value: 'Supplier Reviewed'
     machine_name: supplier_reviewed
-mappings:
-  -
-    target: title
-    map:
-      value: product_title
-    unique:
-      value: '1'
-  -
-    target: field_chs_product_name
-    map:
-      target_id: product_name
-    settings:
-      reference_by: name
-      autocreate: false
-  -
-    target: body
-    map:
-      value: product_description
-      summary: product_description_summary
-    settings:
-      format: plain_text
-  -
-    target: field_chc_manufacturer
-    map:
-      target_id: chc_manufacturer
-    settings:
-      reference_by: title
-      autocreate: false
-      feeds_item: false
-  -
-    target: field_chs_manufacturer
-    map:
-      target_id: chs_manufacturer
-    settings:
-      reference_by: name
-      autocreate: false
-  -
-    target: field_chc_vendor
-    map:
-      target_id: chc_vendor
-    settings:
-      reference_by: title
-      autocreate: false
-      feeds_item: false
-  -
-    target: field_chs_vendor
-    map:
-      target_id: chs_vendor
-    settings:
-      reference_by: name
-      autocreate: false
-  -
-    target: field_chs_phone
-    map:
-      value: phone
-  -
-    target: field_chs_website
-    map:
-      uri: website
-      title: website_name
-  -
-    target: field_chs_price
-    map:
-      value: price
-  -
-    target: field_chs_uom
-    map:
-      value: uom
-    unique: {  }
-  -
-    target: field_chs_comments
-    map:
-      value: comments
-  -
-    target: field_chs_supplier_reviewed
-    map:
-      value: supplier_reviewed
-    settings:
-      format: plain_text
+mappings: {  }

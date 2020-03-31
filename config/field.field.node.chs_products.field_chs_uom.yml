@@ -9,7 +9,7 @@ id: node.chs_products.field_chs_uom
 field_name: field_chs_uom
 entity_type: node
 bundle: chs_products
-label: UOM
+label: 'UOM (Unit of Measure)'
 description: ''
 required: false
 translatable: false
