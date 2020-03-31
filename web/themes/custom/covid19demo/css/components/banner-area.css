@@ -1,7 +1,7 @@
 /* Banner */
 .internal-banner-container {
   position: relative;
-  min-height: 480px;
+  min-height: 80px;
 }
 .internal-banner-container--fullscreen .hero-top {
   position: absolute;
@@ -19,13 +19,13 @@
 }
 .internal-banner {
   font-size: 16px;
-  min-height: 480px;
+  min-height: 80px;
   width: 100%;
 }
 @media (max-width: 575px) {
   .internal-banner,
   .internal-banner-container {
-    min-height: 300px;
+    min-height: 50px;
   }
 }
 .internal-banner-container--carousel,

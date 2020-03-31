@@ -226,11 +226,11 @@
 /*Regions spacing*/
 .hero-top {
   padding: 30px 0 25px;
-  min-height: 480px;
+  min-height: 80px;
 }
 @media (max-width: 575px) {
   .hero-top {
-    min-height: 300px;
+    min-height: 50px;
   }
 }
 .hero-top.region--light-typography {
@@ -242,7 +242,7 @@
 .hero-top__container {
   position: relative;
   z-index: 1;
-  padding-top: 88px;
+  padding-top: 28px;
   padding-bottom: 32px;
 }
 .hero {
