@@ -35,6 +35,8 @@ module:
   embed: 0
   encrypt: 0
   entity_embed: 0
+  facets: 0
+  facets_rest: 0
   feeds: 0
   feeds_ex: 0
   feeds_tamper: 0
@@ -93,9 +95,14 @@ module:
   redirect: 0
   redirect_404: 0
   registration_role: 0
+  rest: 0
   schemata: 0
   schemata_json_schema: 0
   search: 0
+  search_api: 0
+  search_api_autocomplete: 0
+  search_api_db: 0
+  search_api_db_defaults: 0
   seckit: 0
   serialization: 0
   settings_tray: 0

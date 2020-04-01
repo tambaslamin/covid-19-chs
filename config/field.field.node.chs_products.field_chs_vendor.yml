@@ -11,7 +11,7 @@ field_name: field_chs_vendor
 entity_type: node
 bundle: chs_products
 label: 'Vendor Name'
-description: 'Using Taxonomy reference'
+description: 'The platform will start searching for entries as you type to make it easy for you to select the right one.'
 required: true
 translatable: false
 default_value: {  }

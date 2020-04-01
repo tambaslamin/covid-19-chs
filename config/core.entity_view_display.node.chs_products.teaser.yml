@@ -7,33 +7,28 @@ dependencies:
     - field.field.node.chs_products.body
     - field.field.node.chs_products.feeds_item
     - field.field.node.chs_products.field_chc_manufacturer
-    - field.field.node.chs_products.field_chc_vendor
     - field.field.node.chs_products.field_chs_availability_status
     - field.field.node.chs_products.field_chs_comments
     - field.field.node.chs_products.field_chs_in_stock
     - field.field.node.chs_products.field_chs_manufacturer
     - field.field.node.chs_products.field_chs_manufacturer_number
     - field.field.node.chs_products.field_chs_manufacturer_phone_num
-    - field.field.node.chs_products.field_chs_phone
     - field.field.node.chs_products.field_chs_price
     - field.field.node.chs_products.field_chs_product_category
-    - field.field.node.chs_products.field_chs_product_name
     - field.field.node.chs_products.field_chs_product_size
     - field.field.node.chs_products.field_chs_product_type
     - field.field.node.chs_products.field_chs_sku_number
-    - field.field.node.chs_products.field_chs_status
     - field.field.node.chs_products.field_chs_supplier_reviewed
     - field.field.node.chs_products.field_chs_uom
     - field.field.node.chs_products.field_chs_vendor
     - field.field.node.chs_products.field_chs_vendor_address
+    - field.field.node.chs_products.field_chs_vendor_address_details
     - field.field.node.chs_products.field_chs_vendor_email
     - field.field.node.chs_products.field_chs_vendor_fulfillment_cen
     - field.field.node.chs_products.field_chs_vendor_phone_number
     - field.field.node.chs_products.field_chs_vendor_website
-    - field.field.node.chs_products.field_chs_website
     - node.type.chs_products
   module:
-    - options
     - text
     - user
 id: node.chs_products.teaser
@@ -51,9 +46,9 @@ content:
     region: content
   content_moderation_control:
     weight: -20
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_chs_in_stock:
     type: number_integer
     weight: 4
@@ -71,21 +66,6 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-  field_chs_product_name:
-    type: entity_reference_label
-    weight: 0
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_chs_status:
-    type: list_default
-    weight: 5
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
   field_chs_vendor:
     type: entity_reference_label
     weight: 3
@@ -96,9 +76,9 @@ content:
     third_party_settings: {  }
   flag_bookmark:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   feeds_item: true
   field_chc_manufacturer: true
@@ -107,7 +87,6 @@ hidden:
   field_chs_comments: true
   field_chs_manufacturer_number: true
   field_chs_manufacturer_phone_num: true
-  field_chs_phone: true
   field_chs_price: true
   field_chs_product_category: true
   field_chs_product_size: true
@@ -116,9 +95,10 @@ hidden:
   field_chs_supplier_reviewed: true
   field_chs_uom: true
   field_chs_vendor_address: true
+  field_chs_vendor_address_details: true
   field_chs_vendor_email: true
   field_chs_vendor_fulfillment_cen: true
   field_chs_vendor_phone_number: true
   field_chs_vendor_website: true
-  field_chs_website: true
   links: true
+  search_api_excerpt: true

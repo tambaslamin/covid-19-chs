@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - node.type.article
-    - node.type.chc_manufacturer
-    - node.type.chc_vendor
     - node.type.chs_products
     - node.type.page
     - node.type.webform
@@ -69,8 +67,6 @@ type_settings:
   entity_types:
     node:
       - article
-      - chc_manufacturer
-      - chc_vendor
       - chs_products
       - page
       - webform

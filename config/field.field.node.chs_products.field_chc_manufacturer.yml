@@ -4,14 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_chc_manufacturer
-    - node.type.chc_manufacturer
     - node.type.chs_products
 id: node.chs_products.field_chc_manufacturer
 field_name: field_chc_manufacturer
 entity_type: node
 bundle: chs_products
 label: Manufacturer
-description: 'Using node reference'
+description: 'The platform will start searching for entries as you type to make it easy for you to select the right one.'
 required: false
 translatable: false
 default_value: {  }
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:node'
   handler_settings:
-    target_bundles:
-      chc_manufacturer: chc_manufacturer
+    target_bundles: {  }
     sort:
       field: _none
     auto_create: true

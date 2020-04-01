@@ -1,8 +1,9 @@
-uuid: ce9e6a69-f118-47ad-b46a-92ee25803335
+uuid: 6b93771d-7bcc-40b9-b342-ad8cd92bdc22
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.chs_products.body
     - field.field.node.chs_products.feeds_item
     - field.field.node.chs_products.field_chc_manufacturer
@@ -27,253 +28,190 @@ dependencies:
     - field.field.node.chs_products.field_chs_vendor_phone_number
     - field.field.node.chs_products.field_chs_vendor_website
     - node.type.chs_products
-    - workflows.workflow.editorial
   module:
     - address
-    - content_moderation
+    - layout_builder
     - link
-    - path
+    - options
     - telephone
     - text
-id: node.chs_products.default
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.chs_products.search_result
 targetEntityType: node
 bundle: chs_products
-mode: default
+mode: search_result
 content:
   body:
-    type: text_textarea_with_summary
-    weight: 1
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-    region: content
-  created:
-    type: datetime_timestamp
-    weight: 23
-    region: content
+    label: above
+    type: text_default
+    weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_chs_availability_status:
-    weight: 5
+    weight: 4
+    label: above
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
-  field_chs_comments:
-    weight: 20
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
+    type: list_default
     region: content
   field_chs_in_stock:
-    weight: 8
+    weight: 6
+    label: above
     settings:
-      placeholder: ''
+      thousand_separator: ','
+      prefix_suffix: true
     third_party_settings: {  }
-    type: number
+    type: number_integer
     region: content
   field_chs_manufacturer:
-    weight: 18
+    weight: 17
+    label: above
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      link: true
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: entity_reference_label
     region: content
   field_chs_manufacturer_number:
     weight: 7
+    label: above
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   field_chs_manufacturer_phone_num:
-    weight: 19
+    weight: 18
+    label: above
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   field_chs_price:
-    weight: 3
+    weight: 2
+    label: above
     settings:
-      placeholder: ''
+      thousand_separator: ','
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
     third_party_settings: {  }
-    type: number
+    type: number_decimal
     region: content
   field_chs_product_category:
     weight: 9
+    label: above
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      link: true
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: entity_reference_label
     region: content
   field_chs_product_size:
-    weight: 2
+    weight: 1
+    label: above
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   field_chs_product_type:
-    weight: 10
+    weight: 8
+    label: above
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      link: true
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: entity_reference_label
     region: content
   field_chs_sku_number:
-    weight: 6
+    weight: 5
+    label: above
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_chs_supplier_reviewed:
-    weight: 21
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
+    type: string
     region: content
   field_chs_uom:
-    weight: 4
+    weight: 3
+    label: above
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   field_chs_vendor:
-    weight: 11
+    weight: 10
+    label: above
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      link: true
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: entity_reference_label
     region: content
   field_chs_vendor_address:
-    weight: 13
+    weight: 12
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: address_default
     region: content
   field_chs_vendor_address_details:
-    weight: 12
+    weight: 11
+    label: above
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   field_chs_vendor_email:
-    weight: 16
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 15
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    type: email_default
+    type: basic_string
     region: content
   field_chs_vendor_fulfillment_cen:
-    weight: 14
+    weight: 13
+    label: above
     settings:
-      size: 60
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: string_textfield
+    type: string
     region: content
   field_chs_vendor_phone_number:
-    weight: 15
+    weight: 14
+    label: above
     settings:
-      placeholder: ''
+      title: ''
     third_party_settings: {  }
-    type: telephone_default
+    type: telephone_link
     region: content
   field_chs_vendor_website:
-    weight: 17
+    weight: 16
+    label: above
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    type: link_default
+    type: link
     region: content
-  moderation_state:
-    type: moderation_state_default
-    weight: 29
-    settings: {  }
-    region: content
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 26
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 24
-    region: content
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 28
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 25
-    region: content
-    third_party_settings: {  }
-  title:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 22
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    region: content
-    third_party_settings: {  }
-  url_redirects:
-    weight: 27
+  flag_bookmark:
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  content_moderation_control: true
   feeds_item: true
   field_chc_manufacturer: true
+  field_chs_comments: true
   field_chs_status: true
+  field_chs_supplier_reviewed: true
+  links: true
+  search_api_excerpt: true

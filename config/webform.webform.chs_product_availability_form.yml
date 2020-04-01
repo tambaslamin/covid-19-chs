@@ -9,10 +9,10 @@ uid: 1
 template: false
 archive: false
 id: chs_product_availability_form
-title: 'Seller Product Availability Form'
+title: 'Vendor Product Availability Form'
 description: ''
 category: CHS
-elements: "chs_product_name:\n  '#type': webform_term_select\n  '#title': 'CHS Product Name'\n  '#vocabulary': chs_product\n  '#breadcrumb_delimiter': ''\nchs_available_stock:\n  '#type': number\n  '#title': 'CHS Available Stock'\n  '#format_items': comma\nchs_website:\n  '#type': webform_link\n  '#title': 'CHS Website'\n  '#format_items': ol\n  '#title__access': false\ncaptcha:\n  '#type': captcha"
+elements: "markup:\n  '#type': webform_markup\n  '#markup': 'Use this form to submit data about critical supply products you have in stock for sale'\nchs_product_name:\n  '#type': webform_term_select\n  '#title': 'Product Name'\n  '#vocabulary': chs_product\n  '#breadcrumb_delimiter': ''\n  '#required': true\nchs_product_description:\n  '#type': textfield\n  '#title': 'Product Description'\nchs_product_size:\n  '#type': textfield\n  '#title': 'Product size'\nchs_product_price:\n  '#type': textfield\n  '#title': 'Product Price'\n  '#required': true\nchs_price_currency:\n  '#type': textfield\n  '#title': 'Price Currency'\n  '#required': true\nchs_uom_unit_of_measure_:\n  '#type': textfield\n  '#title': 'UOM (Unit of Measure)'\n  '#required': true\nchs_availability_status:\n  '#type': select\n  '#title': 'Availability Status'\n  '#options':\n    'Available - In Stock': 'Available - In Stock'\n    'Not Available - Out of Stock': 'Not Available - Out of Stock'\n  '#required': true\nchs_product_sku:\n  '#type': textfield\n  '#title': 'Product SKU'\nchs_product_category:\n  '#type': webform_term_select\n  '#title': 'Product Category'\n  '#vocabulary': chs_product_category\n  '#breadcrumb_delimiter': ''\nchs_product_type:\n  '#type': webform_term_select\n  '#title': 'Product Type'\n  '#vocabulary': chs_product_type\n  '#breadcrumb_delimiter': ''\n  '#required': true\nchs_available_stock:\n  '#type': number\n  '#title': 'Available Stock'\n  '#format_items': comma\n  '#required': true\nchs_category_number:\n  '#type': textfield\n  '#title': 'Category # /Manufacturer #'\nchs_vendor_name:\n  '#type': textfield\n  '#title': 'Vendor Name'\n  '#required': true\nchs_vendor_address:\n  '#type': webform_address\n  '#title': 'Vendor Address'\n  '#address__access': false\n  '#address_2__access': false\n  '#postal_code__access': false\n  '#required': true\nchs_vendor_fulfillment_center:\n  '#type': textfield\n  '#title': 'Vendor Fulfillment Center'\n  '#required': true\nchs_vendor_phone_number:\n  '#type': tel\n  '#title': 'Vendor Phone Number'\n  '#required': true\nchs_vendor_email:\n  '#type': email\n  '#title': 'Vendor Email'\n  '#required': true\nchs_vendor_website:\n  '#type': webform_link\n  '#title': 'Vendor Website'\n  '#title__access': false\n  '#required': true\nchs_manufacturer_name:\n  '#type': textfield\n  '#title': 'Manufacturer Name'\nchs_manufacturer_phone_number:\n  '#type': tel\n  '#title': 'Manufacturer Phone Number'\ncaptcha:\n  '#type': captcha"
 css: ''
 javascript: ''
 settings:
@@ -103,7 +103,7 @@ settings:
   draft_pending_multiple_message: ''
   confirmation_type: page
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: 'Thank you for submitting the Vendor Product Availability Form. One of our staff will be in touch via email or phone with further details.'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
@@ -191,5 +191,41 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    label: Email
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: tamba.s.lamin@accenture.com
+      to_options: {  }
+      cc_mail: '[webform_submission:values:chs_vendor_email:raw]'
+      cc_options: {  }
+      bcc_mail: '[webform:author:mail]'
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
 variants: {  }
