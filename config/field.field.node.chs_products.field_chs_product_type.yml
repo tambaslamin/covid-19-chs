@@ -11,7 +11,7 @@ field_name: field_chs_product_type
 entity_type: node
 bundle: chs_products
 label: 'Product Type'
-description: ''
+description: 'The platform will start searching for entries as you type to make it easy for you to select the right one.'
 required: false
 translatable: false
 default_value: {  }
