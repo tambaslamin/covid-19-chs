@@ -73,6 +73,7 @@ module:
   metatag_open_graph: 0
   metatag_twitter_cards: 0
   metatag_views: 0
+  moderated_content_bulk_publish: 0
   moderation_dashboard: 0
   moderation_sidebar: 0
   node: 0

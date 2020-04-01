@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.chs_products.body
     - field.field.node.chs_products.feeds_item
-    - field.field.node.chs_products.field_chc_manufacturer
     - field.field.node.chs_products.field_chs_availability_status
     - field.field.node.chs_products.field_chs_comments
     - field.field.node.chs_products.field_chs_in_stock
@@ -232,6 +231,5 @@ content:
     third_party_settings: {  }
 hidden:
   feeds_item: true
-  field_chc_manufacturer: true
   field_chs_status: true
   search_api_excerpt: true
